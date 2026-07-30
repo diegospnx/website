@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <section>
     <nav>
-      <img src="assets/FES.svg" alt="">
+      <img src="assets/FES.svg" class="logo" alt="">
       <ul>
         <li> <a href="#about">about</a></li>
         <li> <a href="#discort">discord</a></li>
@@ -16,11 +17,13 @@
       </ul>
     </nav>
     <header>
+           <div class="row">
       <div>
         <h1>Best place to learn frontend</h1>
-        <p>Go from being an absolute beginner to being a pro with simplified process</p>
+        <p class="subheader">Go from being an absolute beginner to being a pro with simplified process</p>
         <button>start now</button>
       </div>
+           </div>
       <figure>
         <img src="assets/laptop.png" alt="home page image">
       </figure>
@@ -29,42 +32,58 @@
   <main>
     <section id="about">
       <h2>about</h2>
-      <div>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ut fuga, dolor corporis iste fugit recusandae, eligendi expedita molestiae accusantium culpa omnis odio rem facere non animi quae eum. Ipsam!</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, dolorum debitis? Quae enim iusto neque? Voluptatibus, consequuntur optio, perspiciatis incidunt eligendi quasi ut inventore veritatis voluptatum, dolor fugit laudantium accusantium!</p>
+      <div class="row">
+    <div class="section__description">
+      <div class="section__description--wrapper">
+        <p class="section__description--para"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ut fuga, dolor corporis iste fugit recusandae, eligendi expedita molestiae accusantium culpa omnis odio rem facere non animi quae eum. Ipsam!</p>
+        <p class="section__description--para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, dolorum debitis? Quae enim iusto neque? Voluptatibus, consequuntur optio, perspiciatis incidunt eligendi quasi ut inventore veritatis voluptatum, dolor fugit laudantium accusantium!</p>
 
-      </div>
+    </div>
+        <div class="about__img--wrapper">
       <figure>
         <img src="assets/about.jpg" alt="">
       </figure>
+        </div> 
+    </div>
+      </div>
+
     </section>
     <section id="discort">
-      <h2>Discrod</h2>
-      <figure>
+      <h2>Discord</h2>
+      <div class="row">
+
+      </div>
+    
+    
+               <div class="section__description">
+      <figure class="about__img--wrapper">
         <img src="assets/discord.png" alt="">
       </figure>
-      <div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi impedit voluptatum, excepturi natus alias aspernatur adipisci consectetur accusamus obcaecati beatae, sed quidem nam maxime amet quaerat fugit, voluptas culpa!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur aliquid minus cumque incidunt excepturi? Excepturi id alias aliquam doloribus ut odio consequatur, ratione tenetur repellendus, fuga eius, cupiditate suscipit itaque.</p>
+      <div class="section__description--wrapper">
+        <p class="section__description--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nisi impedit vol uptatum, excepturi natus alias aspernatur adipisci consectetur accusamus obcaecati beatae, sed quidem nam maxime amet quaerat fugit, voluptas culpa!</p>
+        <p class="section__description--para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur aliquid minus cumque incidunt excepturi? Excepturi id alias aliquam doloribus ut odio consequatur, ratione tenetur repellendus, fuga eius, cupiditate suscipit itaque.</p>
+      </div>
+               </div>
       </div>
     </section>
     <section id="content">
       <h2>Content</h2>
       <form action="">
         <span>Email</span>
-        <input type="text" placeholder="waves@example.com">
+        <input type="email" placeholder="waves@example.com">
         <span>Messages</span>
         <textarea type="text" placeholder="waves@example.com"></textarea>
+        <button>contact us</button>
       </form>
     </section>
   </main>
   <footer>
-    <img src="assets/FES.svg" alt="">
-    <div>
-      <a href="#about">about/a>
-        <a href="#discord">discord</a>
-        <a href="#content">Content</a>
-        <a href="">courses</a>
+    <img class="footer__logo" src="assets/FES.svg" alt="">
+    <div class="footer__links">
+      <a class="footer__links" href="#about">about</a>
+        <a class="footer__links" href="#discord">discord</a>
+        <a class="footer__links" href="#content">Content</a>
+        <a class="footer__links" href="">courses</a>
     </div>
     <p>Copyright frontend simplified</p>
   </footer>
